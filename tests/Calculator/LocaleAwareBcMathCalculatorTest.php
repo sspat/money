@@ -4,7 +4,7 @@ namespace Tests\Money\Calculator;
 
 final class LocaleAwareBcMathCalculatorTest extends BcMathCalculatorTest
 {
-    public function setUp(): void
+    public function setUp()
     {
         parent::setUp();
 
