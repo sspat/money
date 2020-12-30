@@ -35,7 +35,7 @@
         "doctrine/instantiator": "^1.0.5",
         "florianv/exchanger": "^1.0 || ^2.6",
         "florianv/swap": "^3.0 || ^4.3",
-        "friends-of-phpspec/phpspec-code-coverage": "^3.1.1 || ^4.3",
+        "friends-of-phpspec/phpspec-code-coverage": "^6.0",
         "moneyphp/iso-currencies": "^3.2.1",
         "php-http/message": "^1.4",
         "php-http/mock-client": "^1.0.0",
