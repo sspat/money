@@ -2,7 +2,7 @@
 
 namespace spec\Money\Exchange;
 
-use Exchanger\Contract\ExchangeRateProvider;
+use Exchanger\Exchanger;
 use Exchanger\CurrencyPair as ExchangerCurrencyPair;
 use Exchanger\Contract\ExchangeRate;
 use Exchanger\Exception\Exception;
@@ -18,7 +18,7 @@ use PhpSpec\ObjectBehavior;
 
 final class ExchangerExchangeSpec extends ObjectBehavior
 {
-    function let(ExchangeRateProvider $exchanger)
+    function let(Exchanger  $exchanger)
     {
         $this->beConstructedWith($exchanger);
     }
@@ -33,7 +33,7 @@ final class ExchangerExchangeSpec extends ObjectBehavior
         $this->shouldImplement(Exchange::class);
     }
 
-    function it_exchanges_currencies(ExchangeRateProvider $exchanger, ExchangeRate $exchangeRate)
+    function it_exchanges_currencies(Exchanger $exchanger, ExchangeRate $exchangeRate)
     {
         $exchangeRate->getValue()->willReturn('1.0');
 
@@ -48,7 +48,7 @@ final class ExchangerExchangeSpec extends ObjectBehavior
         $currencyPair->getConversionRatio()->shouldReturn(1.0);
     }
 
-    function it_throws_an_exception_when_cannot_exchange_currencies(ExchangeRateProvider $exchanger)
+    function it_throws_an_exception_when_cannot_exchange_currencies(Exchanger $exchanger)
     {
         $query = new ExchangeRateQuery(new ExchangerCurrencyPair('EUR', 'XYZ'));
         $exchanger->getExchangeRate($query)->willThrow(Exception::class);

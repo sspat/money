@@ -2,7 +2,7 @@
 
 namespace Money\Exchange;
 
-use Exchanger\Contract\ExchangeRateProvider;
+use Exchanger\Exchanger;
 use Exchanger\CurrencyPair as ExchangerCurrencyPair;
 use Exchanger\Exception\Exception as ExchangerException;
 use Exchanger\ExchangeRateQuery;
@@ -19,11 +19,11 @@ use Money\Exchange;
 final class ExchangerExchange implements Exchange
 {
     /**
-     * @var ExchangeRateProvider
+     * @var Exchanger
      */
     private $exchanger;
 
-    public function __construct(ExchangeRateProvider $exchanger)
+    public function __construct(Exchanger $exchanger)
     {
         $this->exchanger = $exchanger;
     }
