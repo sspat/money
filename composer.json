@@ -41,8 +41,7 @@
         "php-http/mock-client": "^1.0.0",
         "phpspec/phpspec": "^6.3",
         "phpunit/phpunit": "^9.5",
-        "psr/cache": "^1.0",
-        "vimeo/psalm": "^4.3"
+        "psr/cache": "^1.0"
     },
     "suggest": {
         "ext-bcmath": "Calculate without integer limits",
