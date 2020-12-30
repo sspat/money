@@ -3,9 +3,3 @@ suites:
         namespace: Money
         psr4_prefix: Money
 formatter.name: pretty
-extensions:
-    FriendsOfPhpSpec\PhpSpec\CodeCoverage\CodeCoverageExtension:
-        format:
-            - clover
-        output:
-            clover: build/spec_coverage.xml
