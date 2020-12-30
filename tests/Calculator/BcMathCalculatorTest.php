@@ -21,7 +21,7 @@ class BcMathCalculatorTest extends CalculatorTestCase
         $this->defaultScale = ini_get('bcmath.scale');
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         bcscale($this->defaultScale);
     }
