@@ -49,8 +49,3 @@ jobs:
 
       - name: Psalm
         uses: docker://vimeo/psalm-github-actions
-        env:
-          REQUIRE_DEV: true
-        with:
-          entrypoint: ./.github/workflows/psalm.entrypoint
-          args: --threads=8 --diff
