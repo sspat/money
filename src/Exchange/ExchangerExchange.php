@@ -2,9 +2,9 @@
 
 namespace Money\Exchange;
 
-use Exchanger\Exchanger;
 use Exchanger\CurrencyPair as ExchangerCurrencyPair;
 use Exchanger\Exception\Exception as ExchangerException;
+use Exchanger\Exchanger;
 use Exchanger\ExchangeRateQuery;
 use Money\Currency;
 use Money\CurrencyPair;
