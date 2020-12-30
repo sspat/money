@@ -31,6 +31,7 @@ final class DecimalMoneyParserTest extends TestCase
 
     /**
      * @dataProvider invalidMoneyExamples
+     * @expectedDeprecation Passing a currency as string is deprecated since 3.1 and will be removed in 4.0. Please pass a Money\Currency instance instead.
      * @test
      */
     public function it_throws_an_exception_upon_invalid_inputs($input)
