@@ -40,7 +40,7 @@
         "php-http/message": "^1.4",
         "php-http/mock-client": "^1.0.0",
         "phpspec/phpspec": "^6.3",
-        "phpunit/phpunit": "^8.5",
+        "phpunit/phpunit": "^7.5.18 || ^8.5",
         "sebastian/comparator": "^2.1",
         "psr/cache": "^1.0",
         "symfony/phpunit-bridge": "^4"
