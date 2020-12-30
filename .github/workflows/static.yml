@@ -51,6 +51,3 @@ jobs:
         uses: docker://vimeo/psalm-github-actions
         env:
           CHECK_PLATFORM_REQUIREMENTS: false
-        with:
-          composer_require_dev: true
-          composer_ignore_platform_reqs: true
