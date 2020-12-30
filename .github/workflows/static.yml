@@ -56,4 +56,4 @@ jobs:
         uses: docker://vimeo/psalm-github-actions
         with:
           entrypoint: ./.github/workflows/psalm.entrypoint
-          args: --threads=8 --diff --diff-methods
+          args: --threads=8 --diff
