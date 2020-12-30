@@ -37,6 +37,7 @@
         "florianv/swap": "^4.3",
         "friends-of-phpspec/phpspec-code-coverage": "^6.0",
         "moneyphp/iso-currencies": "^3.2.1",
+        "ocramius/package-versions": "^2.3",
         "php-http/message": "^1.4",
         "php-http/mock-client": "^1.0.0",
         "phpspec/phpspec": "^6.3",

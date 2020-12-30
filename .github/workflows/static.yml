@@ -57,5 +57,3 @@ jobs:
         with:
           entrypoint: ./.github/workflows/psalm.entrypoint
           args: --threads=8 --diff
-          composer_require_dev: true
-          composer_ignore_platform_reqs: true
