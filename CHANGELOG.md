@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+- Added PHP 8.0 support
+- Added PHP 8.0 in test suite
 
 ## [3.3.1] - 2019-03-13
 
