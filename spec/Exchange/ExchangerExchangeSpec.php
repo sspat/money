@@ -2,10 +2,10 @@
 
 namespace spec\Money\Exchange;
 
-use Exchanger\Exchanger;
 use Exchanger\CurrencyPair as ExchangerCurrencyPair;
 use Exchanger\Contract\ExchangeRate;
 use Exchanger\Exception\Exception;
+use Exchanger\Exchanger;
 use Exchanger\ExchangeRateQuery;
 use Money\Currency;
 use Money\CurrencyPair;
@@ -18,7 +18,7 @@ use PhpSpec\ObjectBehavior;
 
 final class ExchangerExchangeSpec extends ObjectBehavior
 {
-    function let(Exchanger  $exchanger)
+    function let(Exchanger $exchanger)
     {
         $this->beConstructedWith($exchanger);
     }
