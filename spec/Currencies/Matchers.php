@@ -9,7 +9,7 @@ trait Matchers
     /**
      * @return array
      */
-    public function getMatchers(): array
+    public function getMatchers()
     {
         return [
             'haveCurrency' => function ($subject, $value) {
